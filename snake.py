@@ -112,7 +112,7 @@ while alive:
                 lines= f.read().split("\n")
             newLine= "highScore={}".format(highScore)
             with open("snake.py", "w") as f:
-                f.write("\n".join([newLine] + lines[1:]))
+                f.write("#!/bin/python"+"\n".join([newLine] + lines[2:]))
                 
         pen.clear()
         pen.write("Player Score: {} High Score: {}".format(playerScore, highScore), align="center", font=("Arial", 24, "normal"))
