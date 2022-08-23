@@ -1,8 +1,12 @@
 #!/bin/python
 highScore=0
+try:
+    import turtle
+except importError:
+    os.sys("pip install turtle")
 import time
 import random
-import turtle
+
 alive=True
 segments=[]
 
