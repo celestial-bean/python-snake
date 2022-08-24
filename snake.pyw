@@ -107,7 +107,7 @@ while alive:
         
         if playerScore>highScore:
             highScore=playerScore
-            with open("snake.py", "r") as f:
+            with open("snake.pyw", "r") as f:
                 lines= f.read().split("\n")
             newLine= "highScore={}".format(highScore)
             with open("snake.py", "w") as f:
