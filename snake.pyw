@@ -110,7 +110,7 @@ while alive:
             with open("snake.pyw", "r") as f:
                 lines= f.read().split("\n")
             newLine= "highScore={}".format(highScore)
-            with open("snake.py", "w") as f:
+            with open("snake.pyw", "w") as f:
                 f.write("\n".join([newLine] + lines[1:]))
                 
         pen.clear()
